@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lista de Procesos</title>
+  <link rel="stylesheet" href="/resources/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <script src="/resources/js/procesos.js" defer type="module"></script>
+
+
+  <style>
+    body {
+      background-color: #f3f4f6;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th,
+    td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    th {
+      background-color: #f2f4f8;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="cerrar-process" class="">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-circle text-black m-8 h-6 w-6 "
+      viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+      <path
+        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+    </svg>
+  </button>
+  <div class="container">
+    <div>
+      <h1 class="text-3xl font-bold mb-4">Lista de Procesos</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>PID</th>
+            <th>Nombre</th>
+            <th>Estado</th>
+            <th>Memoria (MB)</th>
+          </tr>
+        </thead>
+        <tbody id="procesos">
+          <!-- La lista de procesos se insertará aquí dinámicamente desde el servidor -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>

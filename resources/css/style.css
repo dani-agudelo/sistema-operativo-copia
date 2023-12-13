@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f1edf1;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section {
+    height: 500px;
+    width: 600px;
+}
+
+.col {
+    background-color: #fff;
+    width: 100%;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: #00000059 0px 5px 15px;
+}
+
+.box {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.first {
+    border-right: 2px solid #40576d33;
+}
+
+input[type=number] {
+    outline: none;
+    border: none;
+    width: 50px;
+    color: #131c35;
+    font-size: 24px;
+    padding: 10px 0px;
+    margin-left: 10px;
+}
+
+.second {
+    border-right: 2px solid #40576d33;
+}
+
+button {
+    border: none;
+    color: #131c35;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: transparent;
+    padding: 10px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    user-select: none;
+}
+
+button:hover {
+    background-color: #40576d1a;
+}
+
+button.active {
+    background-color: #73b1e333;
+    color: #5271ff;
+}
+
+.third {
+    border-right: 2px solid #40576d33;
+}
+
+.third button:focus {
+    background-color: #73b1e333;
+    color: #5271ff;
+}
+
+input[type=color] {
+    width: 35px;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+textarea {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    resize: vertical;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.archivo {
+    background: rgb(225, 166, 255);
+    height: 90px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.archivo:hover {
+    background: #40576d;
+}
+
+.buttonSave{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-weight: 600; /* Puedes ajustar el peso de la fuente según tus preferencias */
+    font-size: 14px; /* Puedes ajustar el tamaño de la fuente según tus preferencias */
+    color: #fff;
+    background: linear-gradient(to bottom right, #6f42c1, #007bff);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+#open-button{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-weight: 600; /* Puedes ajustar el peso de la fuente según tus preferencias */
+    font-size: 14px; /* Puedes ajustar el tamaño de la fuente según tus preferencias */
+    color: #fff;
+    background: linear-gradient(to bottom right, #6f42c1, #007bff);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.3s ease-in-out;
+
+}
+
+.button:hover {
+    background: linear-gradient(to bottom left, #6f42c1, #0056b3);
+}
+
+.saved-f{
+    /* flex  */
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: flex-start;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600; /* Puedes ajustar el peso de la fuente según tus preferencias */
+    font-size: 14px; /* Puedes ajustar el tamaño de la fuente según tus preferencias */
+    color: #000000;
+    background: linear-gradient(to bottom right, #cdc8d5, #d6dadf);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+.saved-f:hover {
+    background: linear-gradient(to bottom left, #b3acc0, #d6dadf);
+}
+
+.file-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-weight: 600; /* Puedes ajustar el peso de la fuente según tus preferencias */
+    font-size: 14px; /* Puedes ajustar el tamaño de la fuente según tus preferencias */
+    color: #000000;
+    background: linear-gradient(to bottom right, #b3acc0, #d6dadf);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.titulo-archivos{
+    color:#6f42c1;
+    padding-bottom: 10px;
+}
+
+#listado {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px; /* 4 pixels in Tailwind's default configuration */
+    height: 96vh;
+    width: 100%;
+    overflow: scroll;
+}
+
+/* Estilos base */
+.cerrar-edit {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-color: #aa00ff;
+    padding: 1px;
+    margin-left: 50px;
+    border-radius: 50%;
+    margin-bottom: 600px;
+    border-radius: 20px; /* 3px en la configuración predeterminada de Tailwind */
+    transition: background-color 100ms ease-in-out;
+}
